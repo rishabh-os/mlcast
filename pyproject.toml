@@ -8,7 +8,12 @@ authors = [
     { name = "Leif Denby" }
 ]
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "lightning>=2.5.2",
+    "numpy>=2.2.6",
+    "torch>=2.7.1",
+    "xarray>=2025.6.1",
+]
 
 [project.scripts]
 mlcast = "mlcast:main"
