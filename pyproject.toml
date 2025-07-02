@@ -1,0 +1,18 @@
+[project]
+name = "mlcast"
+version = "0.0.1"
+description = "mlcast nowcasting package"
+readme = "README.md"
+authors = [
+    { name = "Gabriele Franch", email = "franch@fbk.eu" },
+    { name = "Leif Denby" }
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+mlcast = "mlcast:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
