@@ -12,11 +12,15 @@ This repo contains the `mlcast` package for machine learning-based precipitation
 ## Project Structure
 
 - `src/mlcast/` - Main package source code
-  - `models.py` - Core model definitions
+  - `models/` - Core model definitions
+    - `base.py` - Abstract base classes for nowcasting models
+  - `modules/` - Neural network modules and components
+    - `convgru_modules.py` - ConvGRU-based encoder-decoder modules
 - `examples/` - Reference implementations and API examples
   - `pysteps_ref.py` - PySteps reference implementation
   - `pl_ref.py` - PyTorch Lightning reference implementation  
   - `mlcast_api.py` - Proposed API design example
+- `notebooks/` - Jupyter notebooks for development and examples
 
 Please feel free to raise issues or PRs if you have any suggestions or questions.
 
